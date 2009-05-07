@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-25 21:55+0100\n"
+"POT-Creation-Date: 2009-05-07 12:23+0200\n"
 "PO-Revision-Date: 2008-08-10 01:20+0100\n"
 "Last-Translator: Martin Mahner <martin@mahner.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,8 +98,8 @@ msgstr "Zwischen diesen beiden Dateien wurden keine Änderungen durchgeführt."
 #: templates/dpaste/snippet_details.html:18
 #: templates/dpaste/snippet_details.html:21
 #: templates/dpaste/snippet_details.html:44
-#: templates/dpaste/snippet_details.html:97
-#: templates/dpaste/snippet_details.html:99
+#: templates/dpaste/snippet_details.html:81
+#: templates/dpaste/snippet_details.html:83
 #: templates/dpaste/snippet_list.html:4 templates/dpaste/snippet_list.html:13
 msgid "Snippet"
 msgstr "Snippet"
@@ -139,29 +139,19 @@ msgstr "von %(author)s"
 msgid "Write an answer"
 msgstr "Schreibe eine Antwort"
 
-#: templates/dpaste/snippet_details.html:70
-#: templates/dpaste/snippet_new.html:18
-msgid "Guess lexer"
-msgstr "Syntax erraten"
-
-#: templates/dpaste/snippet_details.html:75
-#: templates/dpaste/snippet_new.html:23
-msgid "Paste it"
-msgstr "Paste es"
-
-#: templates/dpaste/snippet_details.html:85
+#: templates/dpaste/snippet_details.html:69
 msgid "History"
 msgstr "Verlauf"
 
-#: templates/dpaste/snippet_details.html:105
+#: templates/dpaste/snippet_details.html:89
 msgid "Compare"
 msgstr "Vergleichen"
 
-#: templates/dpaste/snippet_details.html:110
+#: templates/dpaste/snippet_details.html:94
 msgid "Options"
 msgstr "Optionen"
 
-#: templates/dpaste/snippet_details.html:111
+#: templates/dpaste/snippet_details.html:95
 msgid "View raw"
 msgstr "Rohformat"
 
@@ -186,6 +176,14 @@ msgstr ""
 "    <a href=\"%(fileb_url)s\">Snippet #%(fileb_id)s</a>\n"
 "    "
 
+#: templates/dpaste/snippet_form.html:10
+msgid "Guess lexer"
+msgstr "Syntax erraten"
+
+#: templates/dpaste/snippet_form.html:15
+msgid "Paste it"
+msgstr "Paste es"
+
 #: templates/dpaste/snippet_list.html:6
 #, python-format
 msgid "Your latest %(snippets_max)s snippets"
@@ -208,12 +206,12 @@ msgstr "Neues Snippet"
 msgid "Paste a new snippet"
 msgstr "Schreibe ein neues Snippet"
 
-#: templates/dpaste/snippet_new.html:30
-msgid "WHAT_IS_THIS_TITLE"
-msgstr "Was ist das hier?"
+#: templates/dpaste/snippet_new.html:14
+msgid "DPASTE_HOMEPAGE_TITLE"
+msgstr "dpaste"
 
-#: templates/dpaste/snippet_new.html:31
-msgid "WHAT_IS_THIS_DESCRIPTION"
+#: templates/dpaste/snippet_new.html:15
+msgid "DPASTE_HOMEPAGE_DESCRIPTION"
 msgstr ""
 "dpaste.de ist ein Codespeicher inspiriert von <a href=\"http://dpaste.com/"
 "\">dpaste.com</a>. Die Vorteile und den Quellcode dieser Seite findest du "
@@ -230,6 +228,9 @@ msgstr "Deine Einstellungen wurden erfolgreich gespeichert."
 #: templates/dpaste/userprefs.html:20
 msgid "Save settings"
 msgstr "Einstellungen speichern"
+
+#~ msgid "WHAT_IS_THIS_TITLE"
+#~ msgstr "Was ist das hier?"
 
 #~ msgid "Youre displaying the whole bunch of lexers!"
 #~ msgstr "Du siehst derzeit das ganze Bündel an Lexern!"
