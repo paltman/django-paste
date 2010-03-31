@@ -9,7 +9,7 @@ from dpaste.highlight import LEXER_DEFAULT, pygmentize
 
 t = 'abcdefghijkmnopqrstuvwwxyzABCDEFGHIJKLOMNOPQRSTUVWXYZ1234567890'
 def generate_secret_id(length=4):
-    return ''.join([random.choice(t) for i in range(length)]) 
+    return ''.join([random.choice(t) for i in range(length)])
 
 class Snippet(models.Model):
     secret_id = models.CharField(_(u'Secret ID'), max_length=4, blank=True)
@@ -31,12 +31,12 @@ class Snippet(models.Model):
     def content_splitted(self):
         return self.content_highlighted.splitlines()
 
-    def save(self):
+    def save(self, *args, **kwargs):
         if not self.pk:
             self.published = datetime.datetime.now()
             self.secret_id = generate_secret_id()
         self.content_highlighted = pygmentize(self.content, self.lexer)
-        super(Snippet, self).save()
+        super(Snippet, self).save(*args, **kwargs)
 
     @permalink
     def get_absolute_url(self):

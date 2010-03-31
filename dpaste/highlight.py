@@ -14,6 +14,7 @@ LEXER_LIST = (
     ('html', 'HTML'),
     ('irc', 'IRC logs'),
     ('js', 'JavaScript'),
+    ('perl', 'Perl'),
     ('php', 'PHP'),
     ('pycon', 'Python console session'),
     ('pytb', 'Python Traceback'),
